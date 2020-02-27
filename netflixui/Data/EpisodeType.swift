@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EpisodeType {
+struct EpisodeType : Identifiable {
     var id : Int
     var name : String
     var time : String

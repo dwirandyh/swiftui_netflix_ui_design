@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D04C0232406825E008947AF /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D04C0222406825E008947AF /* Detail.swift */; };
 		8DC4CAAD240656520096D7F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC4CAAC240656520096D7F8 /* AppDelegate.swift */; };
 		8DC4CAAF240656520096D7F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC4CAAE240656520096D7F8 /* SceneDelegate.swift */; };
 		8DC4CAB1240656520096D7F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC4CAB0240656520096D7F8 /* ContentView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D04C0222406825E008947AF /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		8DC4CAA9240656510096D7F8 /* netflixui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = netflixui.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC4CAAC240656520096D7F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC4CAAE240656520096D7F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8DC4CADF240664D10096D7F8 /* Data */,
-				8DC4CADC2406573D0096D7F8 /* Home */,
+				8DC4CADC2406573D0096D7F8 /* UI */,
 				8DC4CAAC240656520096D7F8 /* AppDelegate.swift */,
 				8DC4CAAE240656520096D7F8 /* SceneDelegate.swift */,
 				8DC4CAB2240656520096D7F8 /* Assets.xcassets */,
@@ -145,13 +147,14 @@
 			path = netflixuiUITests;
 			sourceTree = "<group>";
 		};
-		8DC4CADC2406573D0096D7F8 /* Home */ = {
+		8DC4CADC2406573D0096D7F8 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				8DC4CADD240657500096D7F8 /* Home.swift */,
 				8DC4CAB0240656520096D7F8 /* ContentView.swift */,
+				8D04C0222406825E008947AF /* Detail.swift */,
 			);
-			path = Home;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		8DC4CADF240664D10096D7F8 /* Data */ = {
@@ -297,6 +300,7 @@
 			files = (
 				8DC4CAE5240665980096D7F8 /* Repository.swift in Sources */,
 				8DC4CAAD240656520096D7F8 /* AppDelegate.swift in Sources */,
+				8D04C0232406825E008947AF /* Detail.swift in Sources */,
 				8DC4CAE3240665650096D7F8 /* EpisodeType.swift in Sources */,
 				8DC4CAE1240664E00096D7F8 /* Type.swift in Sources */,
 				8DC4CAAF240656520096D7F8 /* SceneDelegate.swift in Sources */,

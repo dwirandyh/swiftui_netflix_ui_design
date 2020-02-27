@@ -10,10 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            Color.black.edgesIgnoringSafeArea(.all)
-            Home()
-        }
+        NavigationView{
+            Home().navigationBarTitle("")
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
+        }.preferredColorScheme(.dark)
+        
     }
 }
 

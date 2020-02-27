@@ -11,6 +11,7 @@ import SwiftUI
 struct Home: View {
     
     @State var text: String = ""
+    @State var show: Bool = false
     
     var repository = Repository()
     
@@ -43,7 +44,13 @@ struct Home: View {
                     Text("Netflix Originals").font(.title).padding(.top, 10)
                     
                     ZStack{
-                        Image("top").resizable()
+                        NavigationLink(destination: Detail(episodeList: self.repository.episodes, show: $show), isActive: $show){
+                            Text("")
+                        }
+                        
+                        Image("top").resizable().onTapGesture {
+                            self.show.toggle()
+                        }
                         
                         VStack{
                             Spacer()
@@ -123,7 +130,6 @@ struct TypeListView : View {
                                         
                                         Spacer()
                                     }
-                                    
                                 }.frame(height: 5)
                             }.padding(.horizontal, 10)
                                 .padding(.bottom, 10)
